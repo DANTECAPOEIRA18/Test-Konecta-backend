@@ -1,7 +1,7 @@
 import { Column, Entity, ManyToOne, PrimaryGeneratedColumn, JoinColumn } from 'typeorm';
 import { UserOrmEntity } from './user.orm-entity';
 
-@Entity({name: 'tasks'})
+@Entity({ name: 'tasks' })
 export class TaskOrmEntity {
   @PrimaryGeneratedColumn('uuid')
   id!: string;
