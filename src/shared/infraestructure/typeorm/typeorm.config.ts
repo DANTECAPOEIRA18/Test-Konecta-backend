@@ -12,5 +12,6 @@ export const getTypeOrmConfig = (): TypeOrmModuleOptions & DataSourceOptions => 
   database: process.env.DB_NAME || 'tasks_db',
   entities: [UserOrmEntity, TaskOrmEntity],
   synchronize: true,
+  autoLoadEntities: true,
   logging: false,
 });

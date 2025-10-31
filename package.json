@@ -1,11 +1,9 @@
 {
   "name": "Test-Konecta-backend",
   "version": "1.0.0",
-  "license": "MIT",
   "scripts": {
-    "prestart:prod": "node dist/src/main.js",
-    "start": "nest start",
-    "start:dev": "nest start --watch",
+    "start": "node -r dotenv/config dist/main.js",
+    "start:dev": "node -r dotenv/config ./node_modules/@nestjs/cli/bin/nest.js start --watch",
     "build": "nest build",
     "lint": "eslint ."
   },
@@ -21,6 +19,7 @@
     "bcrypt": "^5.1.1",
     "class-transformer": "^0.5.1",
     "class-validator": "^0.14.0",
+    "dotenv": "^17.2.3",
     "helmet": "^7.0.0",
     "passport": "^0.7.0",
     "passport-jwt": "^4.0.1",
